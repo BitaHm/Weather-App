@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <form id="search-form">
+            <input type="text" placeholder="Search For City" id="search-field">
+            <input type="submit" value="Search" id="searchButton">
+        </form>
+        <h1 id="city-name">Tokyo</h1>
+        <div class="city-time">
+            <h5 class="weather-state" id="weather-description">Clear & Sunny</h5>
+            <h5 class="day-time" id="dayTime">Tuesday 15:00</h5>
+        </div>
+        <div style="display: inline-block;">
+            <h4 id="current-temp">17</h4> 
+        </div>
+        <div style="display: inline-block;">
+            <a href="#" id="celecius">°C</a> 
+        </div>
+        <div style="display: inline-block;">
+            <span>/</span> 
+        </div>
+        <div style="display: inline-block;">
+            <a href="#" id="faranhait">°F</a> 
+        </div>
+        <div class="row row1">
+            <div class="col-6">High</div>
+            <div class="col-6">Low</div>
+        </div>
+        <div class="row row2">
+            <div class="col-6" id="high">19°C</div>
+            <div class="col-6" id="low">5°C</div>
+        </div>
+        <div class="moredetails">
+            <div class="row details">
+                <div class="col-4" id="wind-speed">2km/hr</div>
+                <div class="col-4" id="air-pressure">1000</div>
+                <div class="col-4" id="air-humidity">60%</div>
+            </div>
+            <div class="row detailslabel">
+                <div class="col-4">Wind Speed</div>
+                <div class="col-4">Pressure</div>
+                <div class="col-4">Humidity</div>
+            </div>
+        </div>
+        <div class="row forecast">
+            <div class="row day">
+                <div class="col-3">Tuesday</div>
+                <div class="col-3">Wednesday</div>
+                <div class="col-3">Thursday</div>
+                <div class="col-3">Friday</div>
+            </div>
+            <div class="row icon">
+                <div class="col-3"><img src="icons/rain.png" alt=""></div>
+                <div class="col-3"><img src="icons/thunder.png" alt=""></div>
+                <div class="col-3"><img src="icons/winter.png" alt=""></div>
+                <div class="col-3"><img src="icons/rain.png" alt=""></div>
+            </div>
+            <div class="row temp">
+                <div class="col-3">5°C</div>
+                <div class="col-3">-1°C</div>
+                <div class="col-3">-6°C</div>
+                <div class="col-3">9°C</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"> </script>
+</body>
+
+</html>
