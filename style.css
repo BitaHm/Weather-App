@@ -24,10 +24,10 @@ input {
     font-size: 20px;
     margin-left: 1%;
 }
-#temp-details a:hover{
-    color: rgb(126, 223, 126);
+#temp-details .active{
+    color: rgb(35, 245, 67);
     text-decoration: none;
-    font-weight: bold;
+    
 }
 #temp-container {
   margin: 0 auto;

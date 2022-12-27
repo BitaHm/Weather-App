@@ -72,6 +72,8 @@ let faranhait = document.querySelector("#faranhait");
 
 function convertToF(event) {
   event.preventDefault();
+  celesius.classList.remove("active");
+  faranhait.classList.add("active");
   let fTemp = Math.round(celesiusTemp * 9) / 5 + 32;
   let tempToF = document.querySelector("#current-temp");
   tempToF.innerHTML = Math.round(fTemp);
@@ -87,6 +89,8 @@ let celesius = document.querySelector("#celecius");
 
 function convertToCelesius(event){
     event.preventDefault();
+    celesius.classList.add("active");
+    faranhait.classList.remove("active");
     let tempToC = document.querySelector("#current-temp");
     tempToC.innerHTML = Math.round(celesiusTemp);
 }
