@@ -1,0 +1,75 @@
+.container{
+    width: 80%;
+    display: block;
+    margin : 3% auto;
+    text-align: center;
+    border : 1px solid black;
+}
+input {
+    width : 20%;
+    padding: 0.5%;
+    margin: 3% auto;
+    border: 1px solid rgb(186, 186, 186);
+    border-radius: 8px;
+}
+.weather-state{
+    color: seagreen;
+}
+.day-time {
+    color: gray;
+}
+#searchButton {
+    background-color: seagreen ;
+    color: white;
+    width: 8%;
+    border-radius: 8px;
+}
+.city-time{
+    margin: 3% auto;
+}
+h4{
+    margin: 3% auto;
+}
+.row1{
+    background: seagreen;
+    color: white;
+    width: 40%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row2{
+    border: 1px solid rgb(189, 189, 189);
+    width: 40%;
+    margin: 0 auto;
+}
+hr{
+    width: 60%;
+    margin: 5% auto;
+}
+.details {
+    width: 100%; 
+    margin: 1% auto;
+}
+.detailslabel {
+    width: 100%; 
+    margin: 0 auto;
+}
+.forecast {
+   width: 90%; 
+   margin: 3% auto;
+}
+.icon img {
+    width: 30px;
+}
+.moredetails{
+    width: 60%;
+    margin: 9% auto;
+    padding: 3%;
+    border: 1px solid rgb(195, 195, 195);
+    box-shadow: 0.5px 0.5px 5px rgb(192, 192, 192);
+}
+
+a {
+    font-size: x-large;
+}
