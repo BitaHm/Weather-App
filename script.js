@@ -18,7 +18,7 @@ function search(event) {
 
 function showTemperature(response) {
 
-  //celesiusTemp = Math.round(response.data.main.temp);
+  celesiusTemp = Math.round(response.data.main.temp);
   /// data select
   let temperature = Math.round(celesiusTemp);
   let pressure = Math.round(response.data.main.pressure);
