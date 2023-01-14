@@ -1,3 +1,6 @@
+
+
+
 let apiKey = "db76eb94032db381b6033ef59e08505b";
 
 function search(event) {
@@ -11,9 +14,11 @@ function search(event) {
 }
 
 
+
+
 function showTemperature(response) {
 
-    celesiusTemp = Math.round(response.data.main.temp);
+  //celesiusTemp = Math.round(response.data.main.temp);
   /// data select
   let temperature = Math.round(celesiusTemp);
   let pressure = Math.round(response.data.main.pressure);
@@ -43,10 +48,44 @@ function showTemperature(response) {
   airHumidityElement.innerHTML = `${humidity}%`;
   max.innerHTML = `${high}°C`;
   min.innerHTML = `${low}°C`;
+
+  
 }
 
 let searchCity = document.querySelector("#searchButton");
 searchCity.addEventListener("click", search);
+
+
+function displayForcast (){
+  let forecast = document.querySelector("#forecastday");
+
+  let forecastHTML = `<div class ="row">`;
+
+  let dayofWeek = ["Thu", "Fri", "Sat"];
+  dayofWeek.forEach(function(day){
+
+    forecastHTML =  
+    forecastHTML + `
+    <div class="col-2 forecast">
+          <div class="day">
+            <div class="col-3">${day}</div>
+          </div>
+          <div class="icon">
+            <div class="col-3"><img src="http://openweathermap.org/img/wn/10d@2x.png" alt="" /></div>
+          </div>
+          <div class="temp">
+            <div class="col-3">5°C</div>
+          </div>
+          </div>`;
+  })
+
+        forecastHTML =  forecastHTML + `<div/>`
+
+        forecast.innerHTML = forecastHTML
+  }
+  
+displayForcast();
+
 
 // Day & Hour
 let today = new Date();
@@ -100,6 +139,3 @@ celesius.addEventListener("click", convertToCelesius)
 
 
 showTemperature();
-
-
-
